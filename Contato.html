@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Contato</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+  }
+  header, footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+  }
+  nav li {
+    padding: 14px 16px;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  nav a:visited {
+    color: #ffa500;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  form {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Contato</h1>
+  <nav>
+    <ul>
+        <li><a href="Atividade9.html">Home</a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Servicos.html">Serviços</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+        <li><a href="Registrar.html">Registrar</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form action="submit_form.php" method="POST">
+    <h2>Contato</h2>
+    <label for="name">Seu Nome:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Seu E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <input type="submit" value="Enviar Mensagem">
+  </form>
+</main>
+
+<footer>
+  <p>© 2024 MMM. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
